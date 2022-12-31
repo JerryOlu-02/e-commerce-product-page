@@ -559,13 +559,13 @@ body {
 
   .prev--btn {
     top: 50%;
-    left: 5%;
+    left: 2%;
     transform: translate(50%, -50%);
   }
 
   .next--btn {
     top: 50%;
-    right: 5%;
+    right: 8%;
     transform: translate(50%, -50%);
   }
 
