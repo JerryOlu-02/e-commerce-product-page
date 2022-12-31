@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <script defer src="src/js/controller.js" type="module"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar flex">
+        <div class="logo--container flex">
+          <img
+            class="main--menu--bar menu--bar"
+            src="src/img/icon-menu.svg"
+            alt="menubar"
+          />
+
+          <img src="src/img/logo.svg" alt="sneakers__logo" />
+        </div>
+
+        <ul class="navbar--list flex">
+          <li>
+            <img
+              class="close--menu--bar menu--bar"
+              src="src/img/icon-close.svg"
+              alt="closebar"
+            />
+          </li>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+
+        <div class="navbar--cart flex">
+          <img
+            class="show--cart"
+            src="src/img/icon-cart.svg"
+            alt="cart__icon"
+          />
+          <img src="src/img/image-avatar.png" alt="man__avatar" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- OVERLAY CAROUSEL -->
+    <section class="modal hide--modal flex--col">
+      <div class="modal--slider">
+        <img
+          data-current="1"
+          class="modal--slide"
+          src="src/img/image-product-1.jpg"
+          alt="product__1__image"
+        />
+        <img
+          data-current="2"
+          class="modal--slide"
+          src="src/img/image-product-2.jpg"
+          alt="product__2__image"
+        />
+        <img
+          data-current="3"
+          class="modal--slide"
+          src="src/img/image-product-3.jpg"
+          alt="product__3__image"
+        />
+        <img
+          data-current="4"
+          class="modal--slide"
+          src="src/img/image-product-4.jpg"
+          alt="product__4__image"
+        />
+
+        <img
+          class="modal--prev--btn"
+          src="src/img/icon-previous.svg"
+          alt="prev__btn"
+        />
+        <img
+          class="modal--next--btn"
+          src="src/img/icon-next.svg"
+          alt="next__btn"
+        />
+
+        <img
+          class="close--modal--btn"
+          src="src/img/icon-close.svg"
+          alt="close__modal__img"
+        />
+      </div>
+
+      <div class="flex modal--slider--thumbnail">
+        <img
+          data-thumbnail="1"
+          class="modal--slider--thumbnail--img"
+          src="src/img/image-product-1-thumbnail.jpg"
+          alt="product__1__thumbnail__image"
+        />
+        <img
+          data-thumbnail="2"
+          class="modal--slider--thumbnail--img"
+          src="src/img/image-product-2-thumbnail.jpg"
+          alt="product__2__thumbnail__image"
+        />
+        <img
+          data-thumbnail="3"
+          class="modal--slider--thumbnail--img"
+          src="src/img/image-product-3-thumbnail.jpg"
+          alt="product__3__thumbnail__image"
+        />
+        <img
+          data-thumbnail="4"
+          class="modal--slider--thumbnail--img"
+          src="src/img/image-product-4-thumbnail.jpg"
+          alt="product__4__thumbnail__image"
+        />
+      </div>
+    </section>
+
+    <!-- MAIN SECTION -->
+    <section class="section--1 flex">
+      <!-- CART CONTAINER -->
+      <div class="cart--container hide--cart flex--col">
+        <p>Cart</p>
+        <p class="hidden">Your cart is empty.</p>
+
+        <div class="flex cart--product">
+          <img
+            src="src/img/image-product-1-thumbnail.jpg"
+            alt="cart__product__image"
+          />
+
+          <div class="flex--col">
+            <p>Fall Limited Edition Sneakers</p>
+            <p>
+              $125.00 x <span class="products--number">3</span>
+              <span class="total--price">$375.00</span>
+            </p>
+          </div>
+
+          <img
+            class="delete--item"
+            src="src/img/icon-delete.svg"
+            alt="delete__icon"
+          />
+        </div>
+
+        <button class="checkout--btn">Checkout</button>
+      </div>
+
+      <!-- LEFT SECTION -->
+      <div class="left--section flex--col">
+        <!-- LEFT CAROUSEL -->
+        <div class="slider">
+          <img
+            data-current="1"
+            class="slide"
+            src="src/img/image-product-1.jpg"
+            alt="product__1__image"
+          />
+          <img
+            data-current="2"
+            class="slide"
+            src="src/img/image-product-2.jpg"
+            alt="product__2__image"
+          />
+          <img
+            data-current="3"
+            class="slide"
+            src="src/img/image-product-3.jpg"
+            alt="product__3__image"
+          />
+          <img
+            data-current="4"
+            class="slide"
+            src="src/img/image-product-4.jpg"
+            alt="product__4__image"
+          />
+
+          <img
+            class="prev--btn"
+            src="src/img/icon-previous.svg"
+            alt="prev__btn"
+          />
+          <img class="next--btn" src="src/img/icon-next.svg" alt="next__btn" />
+        </div>
+
+        <div class="flex slider--thumbnail">
+          <img
+            data-thumbnail="1"
+            class="slider--thumbnail--img"
+            src="src/img/image-product-1-thumbnail.jpg"
+            alt="product__1__thumbnail__image"
+          />
+          <img
+            data-thumbnail="2"
+            class="slider--thumbnail--img"
+            src="src/img/image-product-2-thumbnail.jpg"
+            alt="product__2__thumbnail__image"
+          />
+          <img
+            data-thumbnail="3"
+            class="slider--thumbnail--img"
+            src="src/img/image-product-3-thumbnail.jpg"
+            alt="product__3__thumbnail__image"
+          />
+          <img
+            data-thumbnail="4"
+            class="slider--thumbnail--img"
+            src="src/img/image-product-4-thumbnail.jpg"
+            alt="product__4__thumbnail__image"
+          />
+        </div>
+      </div>
+
+      <!-- RIGHT SECTION -->
+      <aside class="right--section flex--col">
+        <h4>Sneaker Company</h4>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+
+        <div class="flex price--container">
+          <h3>$125.00</h3>
+          <div>50%</div>
+        </div>
+
+        <p class="previous--price">$250.00</p>
+
+        <div class="flex addtocart--icreaseitems--container">
+          <div class="flex increase--item--container">
+            <img
+              class="decrease--btn"
+              src="src/img/icon-minus.svg"
+              alt="minus__icon"
+            />
+            <p class="no--of--products">0</p>
+            <img
+              class="increase--btn"
+              src="src/img/icon-plus.svg"
+              alt="plus__icon"
+            />
+          </div>
+
+          <button class="addtocart--btn flex">
+            <img src="src/img/icon-cart.svg" alt="cart__icon" /> Add to cart
+          </button>
+        </div>
+      </aside>
+    </section>
+  </body>
+</html>
